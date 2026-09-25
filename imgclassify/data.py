@@ -13,9 +13,9 @@ SAMPLE_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "images")
 IMAGE_URLS = {
     "dog": "https://upload.wikimedia.org/wikipedia/commons/2/26/YellowLabradorLooking_new.jpg",
     "cat": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_November_2010-1a.jpg",
-    "car": "https://upload.wikimedia.org/wikipedia/commons/1/1b/2019_Honda_Civic_sedan.jpg",
-    "airplane": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Airbus_A380_blue_sky.jpg",
-    "banana": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Whole-and-Split.jpg",
+    "car": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80",
+    "airplane": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=80",
+    "banana": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=1200&q=80",
 }
 
 

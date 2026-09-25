@@ -7,7 +7,14 @@ import time
 import torch
 from PIL import Image
 
-from .predict import PREPROCESS, load_model
+try:
+    from .predict import PREPROCESS, load_model
+except ImportError:  # pragma: no cover - allows running as a script directly
+    import os
+    import sys
+
+    sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
+    from imgclassify.predict import PREPROCESS, load_model
 
 
 def benchmark_batch_vs_individual(image_paths: list[str], model_name: str = "resnet50") -> dict:
