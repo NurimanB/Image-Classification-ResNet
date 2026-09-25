@@ -1,0 +1,128 @@
+{
+  "task1": {
+    "dog": "Labrador retriever",
+    "cat": "tiger cat"
+  },
+  "task2": {
+    "dog": [
+      {
+        "class": "Labrador retriever",
+        "probability": 52.366089820861816
+      },
+      {
+        "class": "Chesapeake Bay retriever",
+        "probability": 7.188097387552261
+      },
+      {
+        "class": "golden retriever",
+        "probability": 5.128635466098785
+      },
+      {
+        "class": "dingo",
+        "probability": 3.6656148731708527
+      },
+      {
+        "class": "bloodhound",
+        "probability": 2.7101052924990654
+      }
+    ],
+    "cat": [
+      {
+        "class": "tiger cat",
+        "probability": 45.972320437431335
+      },
+      {
+        "class": "Egyptian cat",
+        "probability": 36.933350563049316
+      },
+      {
+        "class": "tabby",
+        "probability": 16.575655341148376
+      },
+      {
+        "class": "lynx",
+        "probability": 0.17526072915643454
+      },
+      {
+        "class": "plastic bag",
+        "probability": 0.12461350997909904
+      }
+    ]
+  },
+  "task3": {
+    "ResNet-18": {
+      "params_M": 11.7,
+      "avg_inference_ms": 14.9,
+      "per_image_ms": [
+        16.6,
+        13.1
+      ],
+      "top1_predictions": {
+        "dog": "Labrador retriever",
+        "cat": "Egyptian cat"
+      }
+    },
+    "ResNet-50": {
+      "params_M": 25.6,
+      "avg_inference_ms": 31.7,
+      "per_image_ms": [
+        31.7,
+        31.7
+      ],
+      "top1_predictions": {
+        "dog": "Labrador retriever",
+        "cat": "tiger cat"
+      }
+    },
+    "ResNet-101": {
+      "params_M": 44.5,
+      "avg_inference_ms": 206.1,
+      "per_image_ms": [
+        325.1,
+        87.1
+      ],
+      "top1_predictions": {
+        "dog": "Labrador retriever",
+        "cat": "Egyptian cat"
+      }
+    }
+  },
+  "task4": [
+    {
+      "image": "dog",
+      "expected": "dog",
+      "top1_predicted": "Labrador retriever",
+      "top1_confidence": 52.366089820861816,
+      "top5": [
+        {
+          "class": "Labrador retriever",
+          "probability": 52.366089820861816
+        },
+        {
+          "class": "Chesapeake Bay retriever",
+          "probability": 7.188097387552261
+        },
+        {
+          "class": "golden retriever",
+          "probability": 5.128635466098785
+        },
+        {
+          "class": "dingo",
+          "probability": 3.6656148731708527
+        },
+        {
+          "class": "bloodhound",
+          "probability": 2.7101052924990654
+        }
+      ]
+    }
+  ],
+  "extra": {
+    "n_images": 10,
+    "individual_total_ms": 337.2,
+    "individual_per_img_ms": 33.7,
+    "batch_total_ms": 253.9,
+    "batch_per_img_ms": 25.4,
+    "speedup": 1.33
+  }
+}

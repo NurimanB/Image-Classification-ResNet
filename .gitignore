@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+.cache/
+results/*.json
+!results/all_results.json
